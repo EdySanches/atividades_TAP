@@ -1,9 +1,15 @@
-import { obter_nome } from "./exercicio1.js";
+import { imprime_nome } from "./ex1.js";
+import { calcula_potencia } from './ex2.js'
 
 console.log(`---------------- ATIVIDADE 1 ----------------`)
 console.log(`-------- Acadêmico: Edy Luiz Sanches --------`)
 
-var nome = await obter_nome()
-// var potencia = 
+/* exercicio 1 */
+const nome = `Edy Sanches` 
+await imprime_nome(nome)
 
-// console.log(`\nVou precisar de dois números: um para base e um para expoente.`)
+/* exercicio 2 */
+const base = 3
+const expoente = 2
+await calcula_potencia(base, expoente)
+
