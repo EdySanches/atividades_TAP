@@ -1,29 +1,28 @@
-import { imprime_nome } from "./ex1.js";
-import { calcula_potencia } from './ex2.js'
-import { calcula_produto } from "./ex3.js";
-import { adiciona_produto } from "./ex4.js";
+import { calcula_quadrados } from "./ex1.js";
 
-console.log(`---------------- ATIVIDADE 1 ----------------`)
+console.log(`---------------- ATIVIDADE 2 ----------------`)
 console.log(`-------- Acadêmico: Edy Luiz Sanches --------`)
 
 /* exercicio 1 */
-const nome = `Edy Sanches` 
-await imprime_nome(nome)
+const leiturasTensao = [127.5, 0.75, -80.2, -122.3, 2.45, 188.33];
+await calcula_quadrados(leiturasTensao)
 
 /* exercicio 2 */
-const base = 3
-const expoente = 2
-await calcula_potencia(base, expoente)
+const pessoas = [
+    {
+        nome: 'Cassio', 
+        tel: 32424585, 
+        endereco: 'Rua dos Saberes, 241 - Barro Aruanã'
+    }, 
+    { 
+        nome: 'Sabrina', 
+        tel: 33424586, 
+        endereco: 'Rua dos bosques, 241 - Barro Tijuca'
+    }, 
+    {
+        nome: 'Fernando', 
+        tel: 33424588, 
+        endereco: 'Rua Tamandaré, 6000 - Barro Seminário'
+    }
+]
 
-/* exercicio 3 */
-const preco = 10
-const produtos = await calcula_produto(preco)
-
-/* exercicio 4 */
-const novo_produto = {
-    id: 11,
-    nome: 'frango',
-    preco: 10,
-    quantidade: 18
-}
-await adiciona_produto(novo_produto,produtos)

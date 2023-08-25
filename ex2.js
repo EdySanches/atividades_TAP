@@ -1,4 +1,5 @@
-export async function calcula_potencia (base, expoente) {
-    const resultado = base**expoente
-    console.log(`Exercicio 2 -> Resultado: ${resultado}`)
-}
+var users = ids.map((id) => {
+    return usersMockup.find((user) => {
+        return user.id == id;
+    });
+});
