@@ -1,4 +1,5 @@
 import { calcula_quadrados } from "./ex1.js";
+import { busca_user_por_tel } from "./ex2.js";
 
 console.log(`---------------- ATIVIDADE 2 ----------------`)
 console.log(`-------- Acadêmico: Edy Luiz Sanches --------`)
@@ -8,7 +9,7 @@ const leiturasTensao = [127.5, 0.75, -80.2, -122.3, 2.45, 188.33];
 await calcula_quadrados(leiturasTensao)
 
 /* exercicio 2 */
-const pessoas = [
+const usuarios = [
     {
         nome: 'Cassio', 
         tel: 32424585, 
@@ -25,4 +26,5 @@ const pessoas = [
         endereco: 'Rua Tamandaré, 6000 - Barro Seminário'
     }
 ]
+await busca_user_por_tel(usuarios)
 
